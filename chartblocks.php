@@ -14,7 +14,7 @@ add_action('wp_enqueue_scripts', 'register_chartblocks_script');
 
 
 function register_chartblocks_oembed() {
-    wp_oembed_add_provider('#https?://public\.chartblocks\.com/c/.*#i', 'http://embed.chartblocks.com/oembed', true);
+    wp_oembed_add_provider('#https?://public\.chartblocks\.com/c/.*#i', 'http://embed.chartblocks.com/1.0/oembed', true);
 }
 
 function register_chartblocks_script() {
