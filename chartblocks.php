@@ -1,9 +1,9 @@
 <?php
 
 /**
- * Plugin Name: ChartBlocks OEmbed provider
+ * Plugin Name: ChartBlocks
  * Plugin URI: http://www.chartblocks.com/
- * Description: ChartBlocks OEmbed provider
+ * Description: A plugin to aid integration of ChartBlocks charts.
  * Version: 1.0
  * Author: Jay Smith
  * Author URI: http://www.chartblocks.com/

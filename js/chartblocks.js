@@ -8,18 +8,19 @@ jQuery(function() {
         var resize = function() {
             var width = $this.outerWidth(true);
             var height = $this.outerWidth(true);
-            
+
             var widthRatio = width / originalWidth;
             var heightRatio = height / originalHeight;
 
             var ratio = widthRatio > heightRatio ? heightRatio : widthRatio;
-            $this.attr('height', ratio * originalHeight);
-            $this.attr('width', ratio * originalWidth);
+
+            if (ratio < 1) {
+
+                $this.attr('height', ratio * originalHeight);
+                $this.attr('width', ratio * originalWidth);
+            }
 
         };
-        
-
-        $this.resize(resize);
         resize.apply($this.get(0));
     });
 });
